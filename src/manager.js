@@ -25,7 +25,7 @@ class Manager extends EventEmitter {
     this.db = db
     this.wipTs = Date.now()
     this.workers = new Map()
-    this.queues = null
+    this.queues = {}
 
     this.events = events
     this.functions = [
